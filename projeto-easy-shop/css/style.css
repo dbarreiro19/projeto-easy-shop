@@ -1,0 +1,146 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+/* CSS Default  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #5D5D7D;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+}
+
+/* Container Left */
+div.wrapper .content-left {
+    display: inline-block;
+    width: 60%;
+    margin-top: 25%;
+    padding-left: 130px;
+}
+
+div.wrapper .content-left h1 {
+    width: 368px;
+    font-size: 70px;
+    line-height: 80px;
+}
+
+div.wrapper .content-left p {
+    width: 540px;
+    margin: 15px 0;
+    font-size: 28px;
+    line-height: 48px;
+    opacity: 0.6;
+}
+
+div.wrapper .content-left button {
+    width: 269px;
+    height: 62px;
+    background-color: #9499EA;
+    color: #ffffff;
+    font-size: 24px;
+    text-align: center;
+    line-height: 36px;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all .2s;
+}
+
+div.wrapper .content-left button:hover {
+    opacity: .7;
+}
+
+div.wrapper .content-left button:active {
+    opacity: .4;
+}
+
+/* Container Right */
+div.wrapper .content-right {
+    display: inline-block;
+    position: absolute;
+    width: 40%;
+    height: 100vh;    
+    background-color: rgba(93, 93, 125, 0.16);
+}
+
+div.wrapper .content-right header {
+    margin: 28px 0 0 57px;
+}
+
+div.wrapper .content-right header a {
+    font-size: 28px;
+    line-height: 41px;
+    margin-right: 41px;
+    cursor: pointer;
+}
+
+div.wrapper .content-right header a:nth-child(2) {
+    opacity: .4;
+}
+
+div.wrapper .content-right header a:hover {
+    opacity: .4;
+}
+
+div.wrapper .content-right header a:active {
+    opacity: .6;
+}
+
+div.wrapper .content-right img {
+    position: relative;
+    top: 25%;
+    right: 130px;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 900px) {
+
+    div.wrapper .content-left {
+        display: block;
+        width: 100%;
+        height: 50%;
+        margin: 0;
+        padding: 0;
+    }
+
+    div.wrapper .content-left h1 {
+        width: auto;
+        margin: 58px 50px 0 50px;
+        font-size: 36px;
+        text-align: center;
+        line-height: 52px;
+    }
+
+    div.wrapper .content-left p {
+        width: auto;
+        margin: 15px 40px;
+        font-size: 14px;
+        line-height: 24px;
+        text-align: center;
+    }
+
+    div.wrapper .content-left button {
+        display: block;
+        margin: 20px auto;
+    }
+
+    div.wrapper .content-right {
+        display: block;
+        position: static;
+        width: 100%;
+        height: auto;
+        margin: 0;
+        padding: 40px;
+    }
+
+    div.wrapper .content-right header {
+        display: none;
+    }
+
+    div.wrapper .content-right img {
+        position: static;
+        max-width: 90%;
+    }
+
+}
