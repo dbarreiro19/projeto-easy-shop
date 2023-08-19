@@ -48,7 +48,7 @@ div.wrapper .content-left button {
 }
 
 div.wrapper .content-left button:hover {
-    opacity: .7;
+    opacity: 0.7;
 }
 
 div.wrapper .content-left button:active {
